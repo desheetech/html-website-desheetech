@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>html website desheetech </title>
+    <link rel="stylesheet" href="assets\css/styles.css"> <!-- यहाँ आपका CSS फ़ाइल का नाम होगा -->
+	<link rel="stylesheet" href="assets\css/fonts.css">
+	<link rel="stylesheet" href="assets\css/color.cs">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	
+	<!-- Include CryptoJS library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+	
+	<!-- विज्ञापनों के बारे में जानकारी के लिए जावास्क्रिप्ट कोड जोड़ें -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // विज्ञापन देखें लिंक के लिए क्लिक इवेंट हैंडल करें
+            document.querySelector('#ad-info a').addEventListener('click', function(event) {
+                event.preventDefault(); // लिंक के डिफ़ॉल्ट क्लिक को रोकें
+                // अपने विज्ञापन पेज के लिंक को यहाँ लिखें
+                window.location.href = '/ads';
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <!-- यहाँ आपका लोगो होगा -->
+            <img src="assets\logo\logo.png" alt="आपका लोगो">
+        </div>
+        <div id="ad">
+		
+    <!-- कंटेक्ट और सर्च बार -->
+    <form action="/search" method="get">
+        <input type="text" name="query" placeholder="खोजें...">
+        <button type="submit">खोजें</button>
+    </form>
+</div>
+
+    </header>
+	
+<!-- मेनू बार है   -->
+    <section id="menu">
+        <nav>
+            <ul>
+                <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#"><i class="fas fa-cogs"></i> Service</a></li>
+                <li><a href="#"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i> Contact Us</a></li>
+                <li><a href="#"><i class="fas fa-ithub"></i> Github</a></li>
+                <li><a href="#"><i class="fas fa-download"></i> Download</a></li>
+            </ul>
+        </nav>
+    </section>
+	
+	
+	<!--जावास्क्रिप्ट है इस से लॉग इन और रेजिटर बटन बनाये -->
+	<script>
+    // नए बटन्स को बनाने के लिए एक <li> तत्व बनाएं
+    var loginItem = document.createElement("li");
+    var registerItem = document.createElement("li");
+
+    // "Log In" बटन को सेट करें
+    var loginLink = document.createElement("a");
+    loginLink.href = "#";
+    loginLink.textContent = "Log In";
+
+    // "Register" बटन को सेट करें
+    var registerLink = document.createElement("a");
+    registerLink.href = "#";
+    registerLink.textContent = "Register";
+
+    // "Log In" और "Register" बटन्स को <li> तत्व में जोड़ें
+    loginItem.appendChild(loginLink);
+    registerItem.appendChild(registerLink);
+
+    // मेनू के <ul> तत्व को ढूंढें
+    var menuList = document.querySelector("#menu nav ul");
+
+    // "Log In" और "Register" बटन्स को मेनू के साथ जोड़ें
+    menuList.appendChild(loginItem);
+    menuList.appendChild(registerItem);
+</script>
+    
+	<!--स्लइड के सेक्सन है  -->
+	    <div class="slider-container">
+    <div class="slider">
+        <div class="slide">
+            <img src="assets\slide/3.jpg" alt="Slide 1">
+        </div>
+        <div class="slide">
+            <img src="assets\slide/2.jpg" alt="Slide 2">
+        </div>
+        <div class="slide">
+            <img src="assets\slide/1.jpg" alt="Slide 3">
+        </div>
+    </div>
+</div>
+		
+	<!--जावास्क्रिप्ट है इस से लॉग इन और रेजिटर बटन बनाये -->
+    <section id="blog">
+    <div class="container">
+        <h2>हमारे ब्लॉग</h2>
+        <div class="blog-posts">
+            <!-- ब्लॉग पोस्ट 1 -->
+            <div class="blog-post">
+                <h3>पोस्ट का शीर्षक 1</h3>
+                <p>पोस्ट की सारांश</p>
+                <span class="date-time">दिनांक: 25 फरवरी 2024, समय: 10:00 बजे</span>
+                <a href="#" class="read-more">और अधिक पढ़ें</a>
+            </div>
+            <!-- ब्लॉग पोस्ट 2 -->
+            <div class="blog-post">
+                <h3>पोस्ट का शीर्षक 2</h3>
+                <p>पोस्ट की सारांश</p>
+                <span class="date-time">दिनांक: 26 फरवरी 2024, समय: 11:00 बजे</span>
+                <a href="#" class="read-more">और अधिक पढ़ें</a>
+            </div>
+            <div class="blog-post">
+                <h3>पोस्ट का शीर्षक 3</h3>
+                <p>पोस्ट की सारांश</p>
+                <span class="date-time">दिनांक: 26 फरवरी 2024, समय: 11:00 बजे</span>
+                <a href="#" class="read-more">और अधिक पढ़ें</a>
+            </div>
+			<div class="blog-post">
+                <h3>पोस्ट का शीर्षक 4</h3>
+                <p>पोस्ट की सारांश</p>
+                <span class="date-time">दिनांक: 26 फरवरी 2024, समय: 11:00 बजे</span>
+                <a href="#" class="read-more">और अधिक पढ़ें</a>
+            </div>
+			<div class="blog-post">
+                <h3>पोस्ट का शीर्षक 5</h3>
+                <p>पोस्ट की सारांश</p>
+                <span class="date-time">दिनांक: 26 फरवरी 2024, समय: 11:00 बजे</span>
+                <a href="#" class="read-more">और अधिक पढ़ें</a>
+            </div>
+			<div class="blog-post">
+                <h3>पोस्ट का शीर्षक 6</h3>
+                <p>पोस्ट की सारांश</p>
+                <span class="date-time">दिनांक: 26 फरवरी 2024, समय: 11:00 बजे</span>
+                <a href="#" class="read-more">और अधिक पढ़ें</a>
+            </div>
+			<div class="blog-post">
+                <h3>पोस्ट का शीर्षक 7</h3>
+                <p>पोस्ट की सारांश</p>
+                <span class="date-time">दिनांक: 26 फरवरी 2024, समय: 11:00 बजे</span>
+                <a href="#" class="read-more">और अधिक पढ़ें</a>
+            </div>
+			<div class="blog-post">
+                <h3>पोस्ट का शीर्षक 8</h3>
+                <p>पोस्ट की सारांश</p>
+                <span class="date-time">दिनांक: 26 फरवरी 2024, समय: 11:00 बजे</span>
+                <a href="#" class="read-more">और अधिक पढ़ें</a>
+            </div>
+			<div class="blog-post">
+                <h3>पोस्ट का शीर्षक 9</h3>
+                <p>पोस्ट की सारांश</p>
+                <span class="date-time">दिनांक: 26 फरवरी 2024, समय: 11:00 बजे</span>
+                <a href="#" class="read-more">और अधिक पढ़ें</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--लोडर open website  -->
+<div id="loader2" class="loader" style="display: none;">
+        <img src="g.gif" alt="Loading...">
+    </div>
+
+<div id="loader">
+        <img src="g.gif" alt="Loading...">
+    </div>
+	<!-- तीसरा लोडर -->
+    <div id="loader3" class="loader" style="display: none;">
+        <img src="loader3.gif" alt="Loading...">
+    </div>
+
+    <!-- वेबसाइट लोड होने के बाद, लोडर को हाइड करें -->
+    <script>
+        window.addEventListener("load", function() {
+            var loader1 = document.getElementById("loader1");
+            var loader2 = document.getElementById("loader2");
+            var loader3 = document.getElementById("loader3");
+
+            // लोडर 1 को हाइड करें
+            loader1.style.display = "none";
+            // लोडर 2 को दिखाएं
+            loader2.style.display = "block";
+
+            // 2 सेकंड के बाद, लोडर 2 को हाइड करें और लोडर 3 को दिखाएं
+            setTimeout(function() {
+                loader2.style.display = "none";
+                loader3.style.display = "block";
+            }, 2000);
+            
+            // 4 सेकंड के बाद, लोडर 3 को हाइड करें
+            setTimeout(function() {
+                loader3.style.display = "none";
+            }, 4000);
+        });
+    </script>
+	
+<script>
+        window.addEventListener("load", function() {
+            var loader = document.getElementById("loader");
+            // लोडिंग डाइव को हाइड करें
+            loader.style.display = "none";
+        });
+    </script>
+	
+<!-- एन्क्रिप्ट code kre -->	
+  	
+	<script>
+        // Original text
+        var originalText = document.getElementById('original-text').innerText;
+        
+        // Encryption key (must be 16, 24, or 32 bytes long)
+        var encryptionKey = CryptoJS.enc.Utf8.parse('YourEncryptionKey123');
+        
+        // Encrypt text using AES encryption algorithm
+        var encryptedText = CryptoJS.AES.encrypt(originalText, encryptionKey).toString();
+        
+        // Replace original text with encrypted text
+        document.getElementById('original-text').innerText = encryptedText;
+    </script>
+
+	<!-- के विज्ञापन है  -->
+<div id="ad-info">
+    <h4>विज्ञापन</h4>
+    <p>हमारे विज्ञापन ब्लॉग पर उपलब्ध हैं। इन विज्ञापनों के माध्यम से हम अपने उपयोगकर्ताओं को उपयोगी सामग्री प्रदान करते हैं।</p>
+    <p>अधिक जानकारी के लिए हमारे विज्ञापन पेज पर जाएं।</p>
+    <a href="/ads">विज्ञापन देखें</a>
+</div>
+
+
+<!-- फूटर सेक्सन  -->
+
+    <footer class="business-footer">
+        <div id="social-icons">
+            <a href="#" class="social-icon"><img src="assets\social/facebook.png" alt="Facebook"></a>
+            <a href="#" class="social-icon"><img src="assets\social/twitter.png" alt="Twitter"></a>
+            <a href="#" class="social-icon"><img src="assets\social/instagram.png" alt="Instagram"></a>
+        </div>
+		
+        <div class="copyright">
+        <!-- Original Text -->
+        <p id="original-text">&copy; 2024 desheetech।</p>
+    </div>
+    </footer>
+
+    <!-- JavaScript स्लाइडर को कार्यान्वित करने के लिए -->
+    <script src="assets\js/slider.js"></script> <!-- यहाँ आपका JavaScript फ़ाइल का नाम होगा -->
+</body>
+</html>
